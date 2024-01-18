@@ -12,6 +12,7 @@ struct TypeWriterView: View {
     @State var currentText: String = ""
     let finalText: String
     var delay: TimeInterval = 0
+    var hasHaptic: Bool = false
     var body: some View {
         ZStack(alignment: .leading) {
             Text(finalText)
@@ -31,9 +32,11 @@ struct TypeWriterView: View {
             currentText = ""
         }
         if position < finalText.count {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 currentText.append(finalText[position])
-                impactGenerator.impactOccurred()
+                if (hasHaptic) {
+                    impactGenerator.impactOccurred()
+                }
                 typeWriter(at: position + 1)
             }
         }

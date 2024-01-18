@@ -20,6 +20,8 @@ struct ScrollableCommentsView: View {
                     }
                 }.padding(.horizontal, 25)
             }
+            .scrollTargetLayout(isEnabled: true)
+            .scrollTargetBehavior(.viewAligned)
             .onAppear {
                 proxy.scrollTo(initalIndex, anchor: .center)
             }
@@ -58,4 +60,3 @@ private struct CommentView: View {
 #Preview {
     ScrollableCommentsView()
 }
-

@@ -18,6 +18,9 @@
 		3FC7F5CF2B514BD800938FB9 /* PaywallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7F5CE2B514BD800938FB9 /* PaywallViewModel.swift */; };
 		3FC7F5D12B51516200938FB9 /* ScrollableCommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7F5D02B51516200938FB9 /* ScrollableCommentsView.swift */; };
 		3FC7F5D42B5155A200938FB9 /* paywall_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7F5D32B5155A200938FB9 /* paywall_video.mp4 */; };
+		3FF1A0282B594637001BFA86 /* ItemScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1A0272B594637001BFA86 /* ItemScroll.swift */; };
+		3FF1A02A2B594652001BFA86 /* LoopVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1A0292B594652001BFA86 /* LoopVideoPlayer.swift */; };
+		3FF1A02C2B5946C0001BFA86 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1A02B2B5946C0001BFA86 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		3FC7F5CE2B514BD800938FB9 /* PaywallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallViewModel.swift; sourceTree = "<group>"; };
 		3FC7F5D02B51516200938FB9 /* ScrollableCommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableCommentsView.swift; sourceTree = "<group>"; };
 		3FC7F5D32B5155A200938FB9 /* paywall_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = paywall_video.mp4; sourceTree = "<group>"; };
+		3FF1A0272B594637001BFA86 /* ItemScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemScroll.swift; sourceTree = "<group>"; };
+		3FF1A0292B594652001BFA86 /* LoopVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopVideoPlayer.swift; sourceTree = "<group>"; };
+		3FF1A02B2B5946C0001BFA86 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,8 @@
 			children = (
 				3FC7F5C92B51422300938FB9 /* TypeWriterView.swift */,
 				3FC7F5D02B51516200938FB9 /* ScrollableCommentsView.swift */,
+				3FF1A0272B594637001BFA86 /* ItemScroll.swift */,
+				3FF1A0292B594652001BFA86 /* LoopVideoPlayer.swift */,
 			);
 			path = Subcomponents;
 			sourceTree = "<group>";
@@ -126,6 +134,7 @@
 			children = (
 				3FC7F5C72B513DE000938FB9 /* Color+Hex.swift */,
 				3FC7F5CB2B51429900938FB9 /* String.swift */,
+				3FF1A02B2B5946C0001BFA86 /* View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -220,9 +229,12 @@
 			files = (
 				3FC7F5CC2B51429900938FB9 /* String.swift in Sources */,
 				3FC7F5CF2B514BD800938FB9 /* PaywallViewModel.swift in Sources */,
+				3FF1A02C2B5946C0001BFA86 /* View.swift in Sources */,
+				3FF1A02A2B594652001BFA86 /* LoopVideoPlayer.swift in Sources */,
 				3FC7F5C82B513DE000938FB9 /* Color+Hex.swift in Sources */,
 				3FC7F5D12B51516200938FB9 /* ScrollableCommentsView.swift in Sources */,
 				3FC7F5BF2B51376000938FB9 /* PaywallView.swift in Sources */,
+				3FF1A0282B594637001BFA86 /* ItemScroll.swift in Sources */,
 				3FC7F5B02B51373600938FB9 /* face_swapApp.swift in Sources */,
 				3FC7F5CA2B51422300938FB9 /* TypeWriterView.swift in Sources */,
 			);
@@ -283,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -340,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
